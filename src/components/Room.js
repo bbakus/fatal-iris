@@ -1,7 +1,7 @@
 // Room.js
 import React, { useState } from 'react';
 import { rooms } from '../data/rooms';
-// import { getChatResponse } from '../api/Chat';
+
 
 function Room({ roomKey, onExit }) {
   const [userInput, setUserInput] = useState('');
@@ -25,23 +25,6 @@ function Room({ roomKey, onExit }) {
     setIsLoading(true);
     setUserInput('');
 
-    // try {
-    //   // Get AI response
-    //   const aiResponse = await getChatResponse(userInput, room, chatHistory);
-      
-    //   // Add AI response to chat
-    //   const aiMessage = {
-    //     sender: 'ai',
-    //     content: aiResponse,
-    //     timestamp: new Date().toISOString()
-    //   };
-      
-    //   setChatHistory(prev => [...prev, aiMessage]);
-    // } catch (error) {
-    //   console.error('Error:', error);
-    // } finally {
-    //   setIsLoading(false);
-    // }
   };
 
   return (
