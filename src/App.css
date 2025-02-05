@@ -1,0 +1,240 @@
+
+@font-face {
+  font-family: 'Dogica';
+  src: url('../public/fonts/dogica.ttf') format('truetype'),
+      
+}
+
+
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background: black;
+}
+
+.landing-container{
+  position: relative;
+}
+
+.landing-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh; /* This ensures it takes up the full viewport */
+  overflow: hidden; /* In case any content overflows */
+}
+
+.game-title {
+  font-family: 'Dogica';
+  text-align: center;
+  color: black;
+  font-size: 70px;
+  z-index: 10;
+  position: absolute;
+  top: 20%; /* Adjust this value to move it up/down */
+  left: 50%;
+  transform: translate(-50%, -200%);
+  width: 100%;
+}
+
+
+.enter-button {
+  padding: 8px 24px;
+  font-family: 'Dogica';
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 50%;           
+  left: 50%;          
+  transform: translate(-50%, 500%) scale(1); /* Add scale here */
+  z-index: 2;
+}
+
+.enter-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transform: translate(-50%, 500%) scale(1.05); /* Combine both transforms */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.fallen-iris-container{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  transform: translate(0%, 10%);
+}
+
+.fallen-iris-image{
+  border-radius: 40px;
+}
+
+
+.story-intro-container {
+  position: relative;
+  z-index: 3;  /* Higher than your mansion image */
+  color: white;  /* Or another color that will show up on your background */
+  width: 80%;   /* Or whatever width you want */
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mansion-container{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.mansion-image{
+  object-fit: cover;
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+
+.skip-button {
+  padding: 8px 24px;
+  font-family: 'Dogica';
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 50%;           
+  left: 50%;          
+  transform: translate(-50%, 400%) scale(1);
+  z-index: 2;
+}
+
+.skip-button:hover {
+  background-color: transparent;
+  color: #fff;
+  transform: translate(-50%, 400%) scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+
+.typewriter-text {
+  font-family: monospace; /* For that typewriter feel */
+  font-size: 1.2em;  /* Adjust size as needed */
+  line-height: 1.6;
+  white-space: pre-wrap;  /* This preserves line breaks */
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 80%;
+  border-radius: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(10%, 0%);
+  padding: 20px 40px;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background: #000;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+.home-screen{
+
+}
+
+
+
+
+.room-grid{
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  position: inline-block;
+  transform: translate(0%, 60%);
+  top: 50%;
+  left: 50%;
+}
+
+.room-button{
+  border: none;
+  border-radius: 20px;
+  height: 100%;
+  line-height: 0;
+  background: none;
+  padding: 80px;
+  display: inline-block;
+  width: fit-content;  /* This will make the button wrap to its content */
+  display: inline-flex;
+  
+}
+
+.room-button img{
+  border-radius: 20px;
+  height: 30vh;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+  object-fit: contain;
+}
+
+.room-screen{
+  position: absolute;
+  padding: 0px;
+  text-align: center;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%)
+
+}
+
+.room-image img{
+  border-radius: 50px;
+}
+
+.exit-button {
+  padding: 8px 24px;
+  font-family: 'Dogica';
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 2%;           
+  left: 50%;          
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 2;
+}
+
+.exit-button:hover {
+  background-color: transparent;
+  color: #fff;
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
