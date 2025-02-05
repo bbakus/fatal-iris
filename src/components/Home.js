@@ -2,12 +2,23 @@
 
 // Home.js
 import React from "react";
-import { rooms } from '../data/rooms';
-import { useState } from "react";
+// import { rooms } from '../data/rooms';
+import { useState, useEffect } from "react";
 
 
 
-function Home({ setCurrentRoom }) { 
+function Home({ setCurrentRoom, rooms }) { 
+
+  // const [rooms, setRooms] = useState({})
+  
+  //   useEffect(() => {
+  //     fetch("http://localhost:3000/rooms")
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       console.log("Data received:", data)
+  //       return setRooms(data)
+  //     })
+  //   }, [])
   
   
   return (
