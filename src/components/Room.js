@@ -30,6 +30,7 @@ function Room({ addToInventory, inventory, rooms, roomKey, onExit }) {
           <button className="exit-button" onClick={onExit}>Exit Room</button>
         </div>
         <div className="room-image">
+          <h1 className="">USE CURSOR TO FIND CLUES</h1>
           <img src={room.image} alt={room.name} />
            {/* Render clue buttons */}
         {Object.entries(room.clues).map(([clueId, clue]) => (
@@ -42,7 +43,7 @@ function Room({ addToInventory, inventory, rooms, roomKey, onExit }) {
               left: clue.position?.left,
               width: '50px',  // Add width
               height: '50px', // Add height
-              // background: 'rgba(255, 255, 255, 0.5)', // Uncomment to see button areas while testing
+              // background: 'rgba(255, 255, 255, 0.7)', // Uncomment to see button areas while testing
             }}
             onClick={() => handleClueClick(clue) }
             

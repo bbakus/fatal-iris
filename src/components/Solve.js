@@ -1,5 +1,4 @@
 import TypewriterText from "./Typerwriter";
-import Home from "./Home"
 import { useState } from "react";
 import SolveSubmit from "./SolveSubmit";
 

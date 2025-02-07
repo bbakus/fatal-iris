@@ -14,6 +14,85 @@ body{
 }
 
 
+.fallen-iris-nav{
+  top:83%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+}
+
+.nav-link-mansion-intro{
+  margin: 40px;
+  padding: 8px 24px;
+  font-family: 'Dogica';
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  top: 50%;           
+  left: 50%;          
+  transform: translate(-50%, -50%) scale(1); 
+  z-index: 2;
+}
+
+.nav-link-mansion-intro:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transform: translate(-50%, 500%) scale(1.05); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link-fatal-iris{
+  
+  margin: 40px;
+  padding: 8px 24px;
+  font-family: 'Dogica';
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  top: 50%;           
+  left: 50%;          
+  transform: translate(-50%, -50%) scale(1); 
+  z-index: 2;
+}
+
+.nav-link-fatal-iris:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transform: translate(-50%, 500%) scale(1.05); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link-leaderboard{
+  margin: 40px;
+  padding: 8px 24px;
+  font-family: 'Dogica';
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  top: 50%;           
+  left: 50%;          
+  transform: translate(-50%, -50%) scale(1); 
+  z-index: 2;
+}
+
+.nav-link-leaderboard:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transform: translate(-50%, 500%) scale(1.05); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
 .landing-container{
   position: relative;
 }
@@ -39,7 +118,7 @@ body{
 }
 
 
-.enter-button {
+/* .enter-button {
   padding: 8px 24px;
   font-family: 'Dogica';
   background-color: transparent;
@@ -51,16 +130,16 @@ body{
   position: absolute;
   top: 50%;           
   left: 50%;          
-  transform: translate(-50%, 500%) scale(1); /* Add scale here */
+  transform: translate(-50%, 500%) scale(1); 
   z-index: 2;
 }
 
 .enter-button:hover {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  transform: translate(-50%, 500%) scale(1.05); /* Combine both transforms */
+  transform: translate(-50%, 500%) scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+} */
 
 
 
@@ -179,9 +258,6 @@ body{
 }
 
 
-.home-screen{
-
-}
 
 .solve-button {
   padding: 8px 24px;
@@ -430,9 +506,61 @@ h3 {
 }
 
 
+.submit-container{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.input{
+  background-color: rgb(255,255,255,0.2);
+  border: none;
+  color: white;
+  margin: 20px;
+  font-family: 'Dogica';
+  padding: 10px;
+}
+
+.close-investigation{
+  padding: 8px 24px;
+  font-family: 'Dogica';
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 200%;           
+  left: 50%;          
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.close-investigation:hover{
+  background-color: transparent;
+  color: #fff;
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.error-message{
+  color: white;
+  position:absolute;
+  transform:translate(-50%, -50%);
+  top:100%;
+  left:50%;
+  font-family: 'Dogica';
+  font-size: 18px;
+}
+
 
 .score-results{
   /* background-color: rgba(255, 255, 255, 0.2); */
+  min-width: 400px;
   text-align: center;
   line-height: 40px;
   position: absolute;
@@ -441,4 +569,104 @@ h3 {
   transform: translate(-50%, -50%);
   font-family: 'Dogica';
   color: white;
+}
+
+.victoria img{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  width: 400px;
+  height: auto;
+  transform: translate(-200%, -50%);
+  border-radius: 30px;
+
+}
+
+.victoria p{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-182%, 75%);
+  min-width: 450px;
+  text-align: center;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.crystal img{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  width: 400px;
+  height: auto;
+  transform: translate(90%, -50%);
+  border-radius: 30px;
+}
+
+.crystal p{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(75%, 105%);
+  min-width: 450px;
+  text-align: center;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.leaderboard-solve-button{
+  padding: 8px 24px;
+  font-family: 'Dogica';
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 150%;           
+  left: 45%;          
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.leaderboard-solve-button:hover{
+  background-color: transparent;
+  color: #fff;
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+
+.leaderboard-container{
+  color: white;
+  /* background-color: rgb(255,0,0,0.5); */
+  top:40%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  line-height: 60px;
+  font-size: 30px;
+  font-family: 'Dogica';
+  text-align: center;
+}
+
+.leaderboard-container h3{
+  font-size: 50px;
+}
+
+ol {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+li {
+  display: contents;
+}
+
+li > span {
+  /* for each column */
+  padding: 5px;
 }

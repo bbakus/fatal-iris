@@ -1,6 +1,8 @@
 
 
 import React, {useState, useEffect} from "react";
+import Leaderboard from "./Leaderboard"
+import { Link } from "react-router-dom";
 
 
 function SolveSubmit({startTime, inventory}){
@@ -50,7 +52,7 @@ function SolveSubmit({startTime, inventory}){
         e.preventDefault();
         
         if (!playerName) {
-            setFormError("Please enter your name!")
+            setFormError("FILL OUT ALL FIELDS")
             return;
         }
         
@@ -61,8 +63,6 @@ function SolveSubmit({startTime, inventory}){
         setScore(finalScore);
         setSubmitted(true);
     
-        // Get current date for the score entry
-        const date = new Date().toLocaleDateString();
         fetch("http://localhost:3000/scoreboard", {
             method: "POST",
             headers: {
@@ -71,7 +71,6 @@ function SolveSubmit({startTime, inventory}){
             body: JSON.stringify({
                 name: playerName,
                 score: Number(finalScore),
-                time: new Date().toLocaleDateString()
             })
         })
         .then(res => {
@@ -89,24 +88,29 @@ function SolveSubmit({startTime, inventory}){
 
         <div className="submit-container">
             {!submitted ? (<form onSubmit={handleSubmit} className="submit-form">
-                <input disabled={submitted} value={who} onChange={(e) => setWho(e.target.value)} type="text" placeholder="Who did it...?"></input>
-                <input disabled={submitted} value={how} onChange={(e) => setHow(e.target.value)} type="text" placeholder="What killed her...?"></input>
-                <input disabled={submitted} value={playerName} onChange={(e) => setPlayerName(e.target.value)} type="text" placeholder="Enter your name..."/>
+                <input className="input" disabled={submitted} value={who} onChange={(e) => setWho(e.target.value)} type="text" placeholder="Who did it...?"></input>
+                <input className="input" disabled={submitted} value={how} onChange={(e) => setHow(e.target.value)} type="text" placeholder="What killed her...?"></input>
+                <input className="input" disabled={submitted} value={playerName} onChange={(e) => setPlayerName(e.target.value)} type="text" placeholder="Enter your name..."/>
                 {formError && <p className="error-message">{formError}</p>}
                 <button disabled={submitted} className="close-investigation">CLOSE INVESTIGATION</button>
             </form>)
             :(
                 <div className="score-results">
-                  <h2>Final Score: {score}</h2>
-                    <p>Time taken: {Math.round((new Date() - startTime) / 1000)} seconds</p>
-                    <p>Clues found: {inventory.length}/20</p>
-                    <h3>Leaderboard</h3>
-                    {Array.isArray(leaderboard) && leaderboard.map((entry) => (
-                        <div key={entry.id || entry.name}>
-                            {entry.name}: {entry.score} ({entry.time})
-    
-                         </div>
-                    ))}
+                  <h2 className="final-score">Final Score: {score}</h2>
+                    <p className="time-taken">Time taken: {Math.round((new Date() - startTime) / 1000)} seconds</p>
+                    <p className="clues-found">Clues found: {inventory.length}/20</p>
+                    
+                <div className="victoria">
+                    <img src="/images/sprites/Victoria.png"/>
+                    <p>Victoria DeFleur murdered her sister. Isabelle plotted to poison her with iris toxin in her afternoon tea, but Victoria struck first. This ensured she would inherit the estate after Isabelle's death.</p>
+                </div>
+                <div className="crystal">
+                    <img src="/images/sprites/crystal.png"/>
+                    <p>She filled Isabelle's heart medications with deadly lead crystal from the chandelier in Isabelle's room, poisoning her slowly for weeks.</p>
+                </div>
+                    <div className="leaderboard-link-container">
+                        <Link className="leaderboard-solve-link" to="/leaderboard">LEADERBOARD</Link>
+                    </div>
                 </div>
             )}
         </div>
