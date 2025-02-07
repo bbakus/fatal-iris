@@ -5,6 +5,8 @@ import Room from './Room';
 function FatalIris() {
   const [currentRoom, setCurrentRoom] = useState(null);
 
+  const [inventory, setInventory] = useState([])
+
   const [rooms, setRooms] = useState({})
     
     useEffect(() => {
@@ -16,13 +18,35 @@ function FatalIris() {
       })
     }, [])
 
+
+    useEffect(() => {
+      const savedInventory = localStorage.getItem("clueInventory")
+      if(savedInventory){
+        setInventory(JSON.parse(savedInventory))
+      }
+    }, [])
+  
+    useEffect(() => {
+      localStorage.setItem("clueInventory", JSON.stringify(inventory))
+  
+    }, [inventory])
+  
+    const addToInventory = (clue) => {
+      if(!inventory.some(item => item.item === clue.item)){
+        setInventory([...inventory, clue])
+      }
+    }
+  
+
   
   return (
     <div className="game-container">
       {!currentRoom ? (
-        <Home rooms={rooms} setCurrentRoom={setCurrentRoom} />
+        <Home inventory={inventory} rooms={rooms} setCurrentRoom={setCurrentRoom} />
       ) : (
         <Room 
+          addToInventory={addToInventory}
+          inventory={inventory}
           rooms={rooms}
           roomKey={currentRoom} 
           onExit={() => setCurrentRoom(null)} 

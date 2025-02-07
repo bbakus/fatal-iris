@@ -1,29 +1,29 @@
 
 
-// Home.js
 import React from "react";
-// import { rooms } from '../data/rooms';
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import Solve from "./Solve"
 
 
 
-function Home({ setCurrentRoom, rooms }) { 
-
-  // const [rooms, setRooms] = useState({})
+function Home({ inventory, setCurrentRoom, rooms }) { 
   
-  //   useEffect(() => {
-  //     fetch("http://localhost:3000/rooms")
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       console.log("Data received:", data)
-  //       return setRooms(data)
-  //     })
-  //   }, [])
+  const [solve, setSolve] = useState(false)
+  const [startTime] = useState(new Date())
+
+  function handleSolve(){
+    setSolve(true)
+  }
+
   
-  
+
+
   return (
     <div className="home-screen">
       
+      {solve ? (<Solve inventory={inventory} startTime={startTime} onBack={() => setSolve(false)}/>) : (
+      <>
+      <button onClick={handleSolve} className="solve-button">SOLVE</button>
       <div className="room-grid">
         {Object.keys(rooms).map(roomKey => (
           <button
@@ -35,6 +35,8 @@ function Home({ setCurrentRoom, rooms }) {
           </button>
         ))}
       </div>
+      </>
+      )}
     </div>
   );
 }

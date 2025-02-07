@@ -12,7 +12,7 @@ function MansionIntro(){
     }
 
     if (skipIntro) {
-        return <FatalIris />;
+        return <FatalIris/>;
     }
 
     return(
