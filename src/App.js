@@ -15,9 +15,9 @@ function App() {
       
       {/* <Landing/> */}
       <Route path="/" element={<FallenIris />} />
-      <Route path="/fallen-iris/mansion-intro" element={<MansionIntro />} />
-      <Route path="/fallen-iris/fatal-iris" element={<FatalIris />} />
-      <Route path="/fallen-iris/leaderboard" element={<Leaderboard />} />
+      <Route path="/mansion-intro" element={<MansionIntro />} />
+      <Route path="/fatal-iris" element={<FatalIris />} />
+      <Route path="/leaderboard" element={<Leaderboard />} />
     
   
     </Routes>

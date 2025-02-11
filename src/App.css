@@ -38,10 +38,26 @@ body{
   z-index: 2;
 }
 
+.nav-link-mansion-intro-active{
+  margin: 40px;
+  padding: 8px 24px;
+  font-family: 'Dogica';
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  top: 50%;           
+  left: 50%;          
+  transform: translate(-50%, -50%) scale(1); 
+  z-index: 2;
+}
+
 .nav-link-mansion-intro:hover{
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  transform: translate(-50%, 500%) scale(1.05); 
+  transform: translate(-50%, -50%) scale(1.05); 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -62,10 +78,27 @@ body{
   z-index: 2;
 }
 
+.nav-link-fatal-iris-active{
+  
+  margin: 40px;
+  padding: 8px 24px;
+  font-family: 'Dogica';
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  top: 50%;           
+  left: 50%;          
+  transform: translate(-50%, -50%) scale(1); 
+  z-index: 2;
+}
+
 .nav-link-fatal-iris:hover{
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  transform: translate(-50%, 500%) scale(1.05); 
+  transform: translate(-50%, -50%) scale(1.05); 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -85,10 +118,26 @@ body{
   z-index: 2;
 }
 
+.nav-link-leaderboard-active{
+  margin: 40px;
+  padding: 8px 24px;
+  font-family: 'Dogica';
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  top: 50%;           
+  left: 50%;          
+  transform: translate(-50%, -50%) scale(1); 
+  z-index: 2;
+}
+
 .nav-link-leaderboard:hover {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  transform: translate(-50%, 500%) scale(1.05); 
+  transform: translate(-50%, -50%) scale(1.05); 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -395,6 +444,34 @@ body{
   margin-top: 5%;
 }
 
+.mouse-over-text{
+  color: white;
+  position: absolute;
+  text-align: center;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  white-space: nowrap;
+  border-radius: 20px;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.mouse-over-text {
+  animation: fadeOut 3s ease-out forwards;
+  animation-delay: 2s;
+}
+
+
 .exit-button {
   padding: 8px 24px;
   font-family: 'Dogica';
@@ -614,7 +691,7 @@ h3 {
   text-align: justify;
 }
 
-.leaderboard-solve-button{
+.leaderboard-solve-link{
   padding: 8px 24px;
   font-family: 'Dogica';
   background-color: rgba(0, 0, 0, 0.8);
@@ -625,13 +702,13 @@ h3 {
   letter-spacing: 2px;
   position: absolute;
   top: 150%;           
-  left: 45%;          
+  left: 50%;          
   transform: translate(-50%, -50%) scale(1);
   z-index: 2;
   cursor: pointer;
 }
 
-.leaderboard-solve-button:hover{
+.leaderboard-solve-link:hover{
   background-color: transparent;
   color: #fff;
   transform: translate(-50%, -50%) scale(1.05);
@@ -641,7 +718,6 @@ h3 {
 
 .leaderboard-container{
   color: white;
-  /* background-color: rgb(255,0,0,0.5); */
   top:40%;
   left:50%;
   transform: translate(-50%, -50%);
@@ -649,11 +725,24 @@ h3 {
   line-height: 60px;
   font-size: 30px;
   font-family: 'Dogica';
-  text-align: center;
+  text-align: left;
+  z-index: 10;
+
 }
 
 .leaderboard-container h3{
   font-size: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate( 0%, -300%);
+
+}
+
+.leaderboard-list{
+  top:170%;
+  left:47%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
 ol {
@@ -670,3 +759,17 @@ li > span {
   /* for each column */
   padding: 5px;
 }
+
+
+.art-deco{
+  position: absolute;
+  z-index: -1;
+  top:70%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 380%;
+  height: auto;
+
+}
+
+

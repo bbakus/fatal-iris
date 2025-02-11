@@ -1,7 +1,6 @@
 
 
 import React, {useState, useEffect} from "react";
-import Leaderboard from "./Leaderboard"
 import { Link } from "react-router-dom";
 
 
@@ -13,20 +12,11 @@ function SolveSubmit({startTime, inventory}){
     const [submitted, setSubmitted] = useState(false)
     const [playerName, setPlayerName] = useState("")
     const [formError, setFormError] = useState("")
-    const [leaderboard, setLeaderboard] = useState([])
-
-
-    useEffect(() => {
-        if (submitted) {
-          fetch("http://localhost:3000/scoreboard")
-            .then(res => res.json())
-            .then(data => setLeaderboard(data))
-        }
-    }, [submitted])
+ 
 
 
     function calculateScore() {
-        // Base points for correct answers
+        
         let baseScore = 0;
         if (who.toLowerCase().includes("victoria") && 
             (how.toLowerCase().includes("lead") || how.toLowerCase().includes("crystal"))) {
@@ -36,13 +26,11 @@ function SolveSubmit({startTime, inventory}){
           baseScore = 100;
         }
     
-        // Time bonus (lower time = higher score)
         const endTime = new Date();
-        const timeElapsed = (endTime - startTime) / 1000; // Convert to seconds
-        const timeBonus = Math.max(300 - timeElapsed, 0); // More points for faster solving
+        const timeElapsed = (endTime - startTime) / 1000; 
+        const timeBonus = Math.max(300 - timeElapsed, 0); 
     
-        // Clue bonus (more clues = higher score)
-        const clueBonus = inventory.length * 50; // 50 points per clue found
+        const clueBonus = inventory.length * 50; 
     
         const totalScore = baseScore + timeBonus + clueBonus;
         return Math.round(totalScore);

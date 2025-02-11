@@ -29,6 +29,9 @@ function Room({ addToInventory, inventory, rooms, roomKey, onExit }) {
       <div className="room-header">
           <button className="exit-button" onClick={onExit}>Exit Room</button>
         </div>
+        <div className="mouse-over-text">
+          <h3>USE CURSOR TO FIND CLUES</h3>
+        </div>
         <div className="room-image">
           <h1 className="">USE CURSOR TO FIND CLUES</h1>
           <img src={room.image} alt={room.name} />

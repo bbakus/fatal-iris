@@ -26,6 +26,8 @@ function Leaderboard(){
                     })}
                 </ol>
             </div>
+            <img className="art-deco" src="/images/art-deco-1.png"/>
+            {/* <img className="leaderboard-party" src="/images/sprites/party.png"/> */}
 
         {/* {Array.isArray(leaderboard) && leaderboard.map((entry) => (
             <div key={entry.id || entry.name}>

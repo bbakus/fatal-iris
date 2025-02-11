@@ -10,8 +10,8 @@
       "clues": {
         "clue1": {
           "item": "Partially Burned Letter",
-          "description": "Charred remains of a letter visible behind the fireplace grate. Most of the text is burned away, but some fragments are still readable.",
-          "investigation": "Upon closer inspection, the readable portions mention a secret meeting and suspicious financial transactions. The letter appears to be correspondence between Victoria (Isabelle's sister) and James (the groundskeeper), though the context seems to reference a different matter entirely.",
+          "description": "Charred remains of a letter tucked away behind stacks of documents. Most of the text is burned away, but some fragments are still legible.",
+          "investigation": "Upon closer inspection, the readable portions mention a secret meeting and suspicious financial transactions. The letter appears to be correspondence between Noah and Patricia, the maid, though the context is not quite clear.",
           "image": "/images/sprites/redroom/burntLetter.png",
           "position": {
             "top": "62%",
@@ -20,8 +20,8 @@
         },
         "clue2": {
           "item": "Estate Financial Ledger",
-          "description": "A leather-bound book containing detailed financial records of the estate, hidden in a desk drawer with a false bottom.",
-          "investigation": "The ledger reveals systematic discrepancies in the estate's finances over the past year. Several large sums of money have been redirected through clever accounting tricks. Recent entries show that these discrepancies were beginning to be noticed by Isabelle.",
+          "description": "A leather-bound book containing detailed financial records of the estate, hidden at the top of the bookcase.",
+          "investigation": "The ledger reveals systematic discrepancies in the estate's finances over the past year. Several large sums of money have been redirected through clever accounting tricks. Recent entries show that these discrepancies were noted with Isabelle's handwriting. She must have noticed something.",
           "image": "/images/sprites/redroom/estateLedger.png",
           "position": {
             "top": "28%",
@@ -30,7 +30,7 @@
         },
         "clue3": {
           "item": "Medical Record",
-          "description": "Recent medical records showing Isabelle's heart condition and prescribed medication routine, tucked away among tax documents.",
+          "description": "Recent medical records showing Isabelle's heart condition and prescribed medication routine, tucked away among tax documents on the bookshelf.",
           "investigation": "The dosage instructions are very specific. A note from her doctor warns about the importance of taking the exact prescribed amount - no more, no less. Records show she had been managing her condition successfully for years.",
           "image": "/images/sprites/redroom/medicalRecord.png",
           "position": {
@@ -40,8 +40,8 @@
         },
         "clue4": {
           "item": "Threatening Note",
-          "description": "A crumpled note wedged between the typewriter keys, written in cut-out letters from magazines.",
-          "investigation": "The note reads: 'I know what you put in the tea.' It appears to be a warning or threat, and initial evidence suggests it came from the maid - there are traces of cleaning powder on the paper. However, this may be intentionally misleading.",
+          "description": "A crumpled note underneath a flask of whiskey. The text is barely coherent.",
+          "investigation": "The only legible portion reads: 'I know what you put in the tea.' Initial evidence suggests it came from Patricia the maid - there are traces of cleaning powder on the paper, placed in a peculiar way.",
           "image": "/images/sprites/redroom/threateningNote.png",
           "position": {
             "top": "75%",
@@ -50,8 +50,8 @@
         },
         "clue5": {
           "item": "Crystal Reference Book",
-          "description": "An old reference book on decorative crystals and lighting fixtures, with one section carefully bookmarked.",
-          "investigation": "The chapter discusses the composition of fine crystal chandeliers. A paragraph about the toxic properties of lead crystal has been subtly underlined. The book appears to have been recently consulted.",
+          "description": "An old reference book on decorative crystals and gems, with one section carefully bookmarked.",
+          "investigation": "The chapter discusses the composition of fine crystal used in ornate housuehold objects. A paragraph about the toxic properties of lead in such crystal has been subtly underlined. The book appears to have been recently consulted.",
           "image": "/images/sprites/redroom/crystalBook.png",
           "position": {
             "top": "53%",
@@ -80,8 +80,8 @@
         },
         "clue2": {
           "item": "Garden Tools",
-          "description": "A locked cabinet containing specialized botanical tools, including pruning shears, specimen collectors, and extraction equipment.",
-          "investigation": "Chemical analysis of the tools reveals trace amounts of iris-based toxins. Curiously, the fingerprints on the tools belong to the maid, though she claims to never enter this room. The prints appear deliberately placed.",
+          "description": "Specialized botanical tools, including pruning shears, specimen collectors, and extraction equipment scattered on the floor.",
+          "investigation": "The tools have a subtle aroma of iris, mixed with almond. Curiously, the fingerprints on the tools belong to Noah, though he claims to never enter this room. The prints are surprisingly clear.",
           "image": "/images/sprites/blueroom/gardenTools.png",
           "position": {
             "top": "84%",
@@ -91,7 +91,7 @@
         "clue3": {
           "item": "Soil Sample",
           "description": "A distinct patch of soil beneath an empty planter, showing signs of recent disturbance.",
-          "investigation": "The soil contains unusual chemical compounds consistent with concentrated plant toxins. When cross-referenced with the groundskeeper's notes, it becomes clear this planter was used to dispose of extraction byproducts.",
+          "investigation": "The soil contains unusual chemical compounds, perhaps some specialized fertilizer. When cross-referenced with the groundskeeper's notes, it becomes clear this planter was used to dispose of plant compost from elsewhere in the garden.",
           "image": "/images/sprites/blueroom/soilSample.png",
           "position": {
             "top": "72%",
@@ -101,7 +101,7 @@
         "clue4": {
           "item": "Maintenance Logs",
           "description": "A waterproof notebook hidden behind a planter, containing detailed plant care and mansion maintenance records.",
-          "investigation": "Recent entries show James was asked by Victoria to clean the violet room chandelier, but oddly, there's no record of any cleaning supplies being used that day. Several pages appear to have been removed.",
+          "investigation": "Recent entries show James was asked by Victoria to clean the bedroom chandelier, something typically delegated to Patricia the maid. Several pages appear to have been removed.",
           "image": "/images/sprites/blueroom/log.png",
           "position": {
             "top": "72%",
@@ -110,8 +110,8 @@
         },
         "clue5": {
           "item": "Victoria's Notebook",
-          "description": "A small notebook fallen behind a planter, containing various notes about the mansion's maintenance and decoration.",
-          "investigation": "Includes detailed drawings of the violet room chandelier and what appears to be calculations of crystal sizes. Several pages show studies of light refraction through crystal prisms.",
+          "description": "A small notebook stashed in a small cabinet of seeds and botanical tools, containing various notes about the mansion's maintenance and decoration.",
+          "investigation": "Isabelle's sister, Victoria, left detailed notes about the mansion, including evaluations of specific items and their corresponding value.  Several pages have been tabbed , including a page that sums the assets.",
           "image": "/images/sprites/blueroom/victoriaJournal.png",
           "position": {
             "top": "72%",
@@ -130,8 +130,8 @@
       "clues": {
         "clue1": {
           "item": "Chemical Analysis Kit",
-          "description": "An elaborate kit containing various tools for mixing perfumes and medicines, hidden in a vanity compartment.",
-          "investigation": "While seemingly used for perfume, some tools show traces of crushed crystal rather than botanical extracts. A pestle shows unusual scratch marks, inconsistent with grinding soft plant materials.",
+          "description": "An elaborate kit containing various tools for mixing perfumes and medicines, hidden in a compartment at the base of the bed.",
+          "investigation": "While seemingly used for perfume, some tools show traces of brilliant white powder rather than botanical extracts. A pestle shows unusual scratch marks, inconsistent with grinding soft plant materials.",
           "image": "/images/sprites/violetroom/chemicalAnalysisKit.png",
           "position": {
             "top": "72%",
@@ -141,7 +141,7 @@
         "clue2": {
           "item": "Chandelier Irregularity",
           "description": "A subtle gap in the chandelier's crystal pattern, only visible when light hits at certain angles.",
-          "investigation": "One crystal appears to have been carefully removed rather than fallen. The mounting hardware shows signs of deliberate removal rather than accident. The missing piece would have been about the size of a medicine capsule.",
+          "investigation": "One crystal appears to have been carefully removed rather than fallen. The mounting hardware shows signs of deliberate removal rather than accident.",
           "image": "/images/sprites/violetroom/crystalChandelier.png",
           "position": {
             "top": "27.0%",
@@ -160,8 +160,8 @@
         },
         "clue4": {
           "item": "Antique Tea Set",
-          "description": "A personal tea service set in a bedside drawer, including two cups showing signs of recent use.",
-          "investigation": "Chemical analysis of the dried residue shows traces of iris extract, but in non-lethal quantities. The positioning of the cups suggests Isabelle served tea to someone recently.",
+          "description": "A personal tea service set on the vanity, including two cups showing signs of recent use.",
+          "investigation": "A dried residue follows the line of a past tea service, but the color is a peculiar purple. The positioning of the cups suggests Isabelle served tea to someone regularly.",
           "image": "/images/sprites/violetroom/teaSet.png",
           "position": {
             "top": "59%",
@@ -170,8 +170,8 @@
         },
         "clue5": {
           "item": "Modified Will",
-          "description": "A legal document carefully sewn into the bed canopy fabric, recently modified.",
-          "investigation": "The will shows recent changes to inheritance distribution, apparently leaving everything to Victoria. However, close inspection reveals these changes were made under suspicious circumstances. A draft of an actual new will, hidden nearby, shows Isabelle planned to disinherit Victoria completely.",
+          "description": "A legal document carefully placed in a bed-side table, recently modified.",
+          "investigation": "The will shows recent changes to inheritance distribution, apparently leaving everything to her sister Victoria. On closer inspection, these changes were made with slightly different handwriting.",
           "image": "/images/sprites/violetroom/modifiedWill.png",
           "position": {
             "top": "66%",
@@ -190,8 +190,8 @@
       "clues": {
         "clue1": {
           "item": "Family Portrait",
-          "description": "A large oil painting of the DeFleur family, whose subtle details become visible only when viewed in a specific mirror's reflection.",
-          "investigation": "When viewed through the mirror at the correct angle, the painting reveals hidden tensions - Isabelle's hand positioned possessively on inheritance papers, Victoria's subtle expression of contempt, and James the groundskeeper barely visible in the background, watching intently.",
+          "description": "A large oil painting of the DeFleur family, whose subtle details become visible only on close inspection.",
+          "investigation": "The painting depicts Isabelle, her late husband Arthur, Victoria, Noah, James and Patricia. Victoria wears a contemptuous scowl on her face, Noah's hand is lost behind Patricia's figure, and James poses awkwardly behind Victoria. The painting bears the signature of Simon, their neighbor.",
           "image": "/images/sprites/yellowroom/familyPortrait.png",
           "position": {
             "top": "27.8%",
@@ -200,9 +200,9 @@
         },
         "clue2": {
           "item": "Chandelier Receipt",
-          "description": "An old receipt for the violet room chandelier, carefully hidden behind the fireplace mantle.",
-          "investigation": "The receipt emphasizes the chandelier's pure lead crystal composition, a sign of its quality. A newspaper clipping about lead poisoning is folded within it, with certain passages underlined.",
-          "image": "/images/sprites/yellowroom/chandelierReceipt.png",
+          "description": "An old receipt for the violet room chandelier, carefully hidden in a small desk drawer next to the fireplace.",
+          "investigation": "The receipt emphasizes the chandelier's pure lead crystal composition, a sign of its quality. The list price shows a total price of $500, closer inspection reveals Isabelle purchased insurance for this prized posession.",
+          "image": "/images/sprites/chandelierReceipt.jpg",
           "position": {
             "top": "58%",
             "left": "78%"
@@ -210,8 +210,8 @@
         },
         "clue3": {
           "item": "Vacuum Cleaner Bag",
-          "description": "A used vacuum bag from recent cleaning, tucked behind a curtain.",
-          "investigation": "Contains traces of fine crystal dust, suggesting someone cleaned up crushed crystal. The amount of dust seems excessive for normal chandelier maintenance. The bag has been carefully hidden.",
+          "description": "A used vacuum bag from recent cleaning, tucked underneath a couch.",
+          "investigation": "Contains traces of fine white, irridescent dust. The maid, Patricia, is usually quite careful with her tools. The bag has been awkwardly hidden.",
           "image": "/images/sprites/yellowroom/vacuumBag.png",
           "position": {
             "top": "83%",
@@ -221,7 +221,7 @@
         "clue4": {
           "item": "Meeting Notes",
           "description": "A small notebook concealed in a false-bottom vase, containing hastily written plans and figures.",
-          "investigation": "The notes detail a complex plan between Victoria and James, written in deliberately messy handwriting to obscure its authors. It includes timing for tea service and references to cleaning schedules.",
+          "investigation": "The notebook includes dates and times for tea service, and references to cleaning schedules. Small handwriting at the end reads 'Call Simon about agreement'.",
           "image": "/images/sprites/yellowroom/meetingNotes.png",
           "position": {
             "top": "57%",
@@ -231,7 +231,7 @@
         "clue5": {
           "item": "Doctor's Letter",
           "description": "A recent letter from Isabelle's doctor found among correspondence on a side table.",
-          "investigation": "Notes confusion about symptoms that don't quite match expected poisoning patterns. Mentions unusual sparkly residue in fatal dose, but attributed it to normal medication binding agents. The doctor's confusion appears genuine.",
+          "investigation": "Notes confusion about symptoms that don't quite match her heart issues. The doctor's confusion appears genuine, and he recommended she double her current dose of medication.",
           "image": "/images/sprites/yellowroom/doctorLetter.png",
           "position": {
             "top": "70%",
@@ -244,27 +244,33 @@
   "scoreboard": [
     {
       "id": "c30c",
-      "name": "BAKUS",
-      "score": 1087,
-      "time": "2/6/2025"
+      "name": "Izzy",
+      "score": 1087
     },
     {
       "id": "5dbf",
-      "name": "lol",
-      "score": 425,
-      "time": "2/7/2025"
+      "name": "Jordan",
+      "score": 420
     },
     {
       "id": "fd29",
-      "name": "ME",
-      "score": 218,
-      "time": "2/7/2025"
+      "name": "Satan",
+      "score": 666
     },
     {
       "id": "edb2",
       "name": "Bakus",
-      "score": 1428,
-      "time": "2/7/2025"
+      "score": 1428
+    },
+    {
+      "id": "edb1",
+      "name": "Shaq",
+      "score": 752
+    },
+    {
+      "id": "f2b6",
+      "name": "bubbles",
+      "score": 1013
     }
   ]
 }
