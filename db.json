@@ -202,7 +202,7 @@
           "item": "Chandelier Receipt",
           "description": "An old receipt for the violet room chandelier, carefully hidden in a small desk drawer next to the fireplace.",
           "investigation": "The receipt emphasizes the chandelier's pure lead crystal composition, a sign of its quality. The list price shows a total price of $500, closer inspection reveals Isabelle purchased insurance for this prized posession.",
-          "image": "/images/sprites/chandelierReceipt.png",
+          "image": "/images/sprites/yellowroom/chandelierReceipt.png",
           "position": {
             "top": "58%",
             "left": "78%"
