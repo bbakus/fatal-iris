@@ -6,21 +6,15 @@
 
 This project is inspired my true love, Isabelle.
 
-My current thought is to create a roguelite simulator, where the user is presented with four doors:
-Violet, Blue, Red and Yellow, after the colors of the iris. In each door lies a series of puzzles
-that must completed before moving on to the next room. Some events are timed, others have a series
-of events. And some offer choices for a reward, that can help you in future rooms, or sometimes
-for entirely different colored rooms. All the puzzle events will be AI generated, some will be riddles
-Maybe the 'plot' is uncovering a death/murder? Ideally each rooom would be set to just basic mouse events
-and text entry, or keydown events. it might be awesome if it was all text input. Maybe the correct inputs
-are what lead you to clues? hmm, what distinguishes these rooms/routes from eachother. Should they merge?
-do they all culminate to the same climax? What's the point of the four unique paths?
-Maybe they aren't paths. maybe each door just leads to one room, and it's all to solve one single riddle.
-each room gives you a clue, and after diving into each one, you have three attempts to solve the riddle.
-hmm maybe. Maybe each door is a level, only the blue one opens first. failure in any of the doors means 
-restarting from the beginning. Maybe you get to keep an item, or something.
-okay so maybe a murder mystery, the killer leaves an iris on his victims. each room examines each victims
-lives right before the murder, like a time capsule of sorts.
+The intitial readme was very much just a sandbox of ideas, but now that the project is finished I can
+give it a proper introduction. Welcome to Fatal Iris, a murder mystery game where you traverse through
+four different rooms, finding clues with a mouseHover effect, clicking the button, inspecting the clue,
+reading the further investigation when the clue is in your inventory, and ultimately taking a swing
+at solving the mystery. Getting this together was very difficult, and took a lot of persistence to learn
+the things I needed in order to flesh this out programmatically. Overall I think it's turned out quite wonderful, and I would gather to say that I'm proud of it. The functionality, the styling, the story;
+all of it took countless attempts, with so many failures until I could get it right. I hope you enjoy playing it, I honestly have no idea how difficult it may be. Perhaps after seeing someone go into it blind, I can tweak some of the clues, maybe change the button size to be more generous, etc...
+
+Have fun, detective.
 
 
 
