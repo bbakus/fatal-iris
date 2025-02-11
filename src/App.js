@@ -5,7 +5,7 @@ import FallenIris from './components/FallenIrisLanding';
 import MansionIntro from './components/MansionIntro';
 import FatalIris from './components/FatalIris';
 import Leaderboard from './components/Leaderboard';
-import Landing from "./components/Landing"
+
 
 function App() {
   return (
@@ -13,7 +13,6 @@ function App() {
     <Routes>
     
       
-      {/* <Landing/> */}
       <Route path="/" element={<FallenIris />} />
       <Route path="/mansion-intro" element={<MansionIntro />} />
       <Route path="/fatal-iris" element={<FatalIris />} />

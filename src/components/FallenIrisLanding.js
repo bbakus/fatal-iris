@@ -1,11 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function FallenIris({setLandingPage}){
+function FallenIris(){
 
-    function handleEnter(){
-        setLandingPage(false)
-    }
 
     return(
         <div className="landing-container">
