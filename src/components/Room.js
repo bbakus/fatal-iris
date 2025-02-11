@@ -20,7 +20,7 @@ function Room({ addToInventory, inventory, rooms, roomKey, onExit }) {
 
   const handleInventoryClick = (clue) => {
     setSelectedClue(clue);
-    setShowInvestigation(true);  // Show investigation when clicking inventory
+    setShowInvestigation(true); 
   };
 
 
