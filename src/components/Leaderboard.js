@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-function Leaderboard(){
+function Leaderboard({ scores }){
 
-    const [scores, setScores] = useState([])
-
-    useEffect(() => {
-        fetch("http://localhost:3000/scoreboard")
-        .then(response => response.json())
-        .then(data => setScores(data))
-    }, [])
+   
     
     return (
         <div className="leaderboard-container">
