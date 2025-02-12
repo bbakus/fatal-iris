@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { NavLink } from "react-router-dom";
 
 function Leaderboard(){
 
@@ -10,7 +10,7 @@ function Leaderboard(){
         .then(response => response.json())
         .then(data => setScores(data))
     }, [])
-
+    
     return (
         <div className="leaderboard-container">
         <h3>LEADERBOARD</h3>
@@ -26,6 +26,7 @@ function Leaderboard(){
                     })}
                 </ol>
             </div>
+            <NavLink className="home-button" to="/">HOME</NavLink>
             <img className="art-deco" src="/images/art-deco-1.png"/>
         </div>
     )

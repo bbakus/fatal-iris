@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Home from './Home';
 import Room from './Room';
 
-function FatalIris() {
+function FatalIris({addScore}) {
   const [currentRoom, setCurrentRoom] = useState(null);
 
   const [inventory, setInventory] = useState([])
@@ -42,7 +42,7 @@ function FatalIris() {
   return (
     <div className="game-container">
       {!currentRoom ? (
-        <Home inventory={inventory} rooms={rooms} setCurrentRoom={setCurrentRoom} />
+        <Home inventory={inventory} rooms={rooms} addScore={addScore} setCurrentRoom={setCurrentRoom} />
       ) : (
         <Room 
           addToInventory={addToInventory}

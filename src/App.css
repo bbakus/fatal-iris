@@ -273,6 +273,22 @@ body{
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
+.home-button{
+  padding: 8px 24px;
+  font-family: 'Dogica';
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  top: -130%;           
+  left: 50%;          
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 2;
+}
+
 
 .typewriter-text {
   font-family: monospace; /* For that typewriter feel */
@@ -482,8 +498,8 @@ body{
   text-transform: uppercase;
   letter-spacing: 2px;
   position: absolute;
-  top: 6%;           
-  left: 50%;          
+  top: 50%;           
+  left: -15%;          
   transform: translate(-50%, -50%) scale(1);
   z-index: 2;
   cursor: pointer;

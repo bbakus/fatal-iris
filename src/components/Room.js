@@ -1,14 +1,19 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TypewriterText from './Typerwriter';
 
 
 function Room({ addToInventory, inventory, rooms, roomKey, onExit }) {
 
   
+  const [textKey, setTextKey] = useState(0);
   const [selectedClue, setSelectedClue] = useState(null);
   const [showInvestigation, setShowInvestigation] = useState(false)
   const room = rooms[roomKey];
+
+  useEffect(() => {
+    setTextKey(prev => prev + 1);
+  }, [selectedClue]);
 
   const handleClueClick = (clue) => {
     setSelectedClue(clue)
@@ -59,6 +64,7 @@ function Room({ addToInventory, inventory, rooms, roomKey, onExit }) {
             <img src={selectedClue.image} alt={selectedClue.item}/>
             <h3>{selectedClue.item}</h3>
             <TypewriterText
+            key={textKey}
             text={showInvestigation ? selectedClue.investigation : selectedClue.description}
             speed={20}
           />

@@ -2,7 +2,7 @@ import TypewriterText from "./Typerwriter";
 import { useState } from "react";
 import SolveSubmit from "./SolveSubmit";
 
-function Solve({startTime, onBack, inventory}){
+function Solve({ addScore, startTime, onBack, inventory}){
 
     const [forward, setForward] = useState(false)
 
@@ -13,7 +13,7 @@ function Solve({startTime, onBack, inventory}){
 
     return(
         <div>
-            {forward ? <SolveSubmit startTime={startTime} inventory={inventory} /> : 
+            {forward ? <SolveSubmit addScore={addScore} startTime={startTime} inventory={inventory} /> : 
                 <div className="solve-container">
                 <TypewriterText
                     text="Are you sure? You only get one opportunity. There is no going back."

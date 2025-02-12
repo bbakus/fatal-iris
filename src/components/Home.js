@@ -6,7 +6,7 @@ import Solve from "./Solve"
 
 
 
-function Home({ inventory, setCurrentRoom, rooms }) { 
+function Home({ addScore, inventory, setCurrentRoom, rooms }) { 
   
   const [solve, setSolve] = useState(false)
   const [startTime] = useState(new Date())
@@ -21,7 +21,7 @@ function Home({ inventory, setCurrentRoom, rooms }) {
   return (
     <div className="home-screen">
       
-      {solve ? (<Solve inventory={inventory} startTime={startTime} onBack={() => setSolve(false)}/>) : (
+      {solve ? (<Solve addScore={addScore} inventory={inventory} startTime={startTime} onBack={() => setSolve(false)}/>) : (
       <>
       <button onClick={handleSolve} className="solve-button">SOLVE</button>
       <div className="room-grid">

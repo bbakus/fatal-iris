@@ -4,7 +4,7 @@ import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 
 
-function SolveSubmit({startTime, inventory}){
+function SolveSubmit({ addScore, startTime, inventory}){
 
     const [who, setWho] = useState("")
     const[how, setHow] = useState("")
@@ -68,6 +68,7 @@ function SolveSubmit({startTime, inventory}){
             }
             return res.json();
         })
+        .then(data => addScore(data))
         .catch(error => console.log("Error:", error));
     }
 
